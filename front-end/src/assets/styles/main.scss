@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "DroneRangerPro";
+    font-weight: 600;
+    src:
+        local("DroneRangerPro"),
+        url("../fonts/DroneRangerPro.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Inter";
+    src:
+        local("Inter"),
+        url("../fonts/Inter-Black.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    src:
+        local("Inter"),
+        url("../fonts/Inter-Medium.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 500;
+    src:
+        local("Inter"),
+        url("../fonts/Inter-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-weight: 600;
+    src:
+        local("Inter"),
+        url("../fonts/Inter-SemiBold.ttf") format("opentype");
+}
+@font-face {
+    font-family: "Inter";
+    font-weight: 700;
+    src:
+        local("Inter"),
+        url("../fonts/Inter-Bold.ttf") format("opentype");
+}
+
+.display-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-arrival {
+    background-image: url("../images/background-yellow.svg");
+    height: 300px;
+}
+.epic {
+    background: linear-gradient(90deg, #dd5afe 0%, #6366f1 100%);
+}
+
+.rare {
+    background: linear-gradient(90deg, #43a6f6 0%, #5868f3 100%);
+}
+.common {
+    background: linear-gradient(90deg, #49dd81 0%, #22b4c6 100%);
+}
+.mythic {
+    background: linear-gradient(90deg, #fe5a5a 0%, #f163d2 100%);
+}
+.legendary {
+    background: linear-gradient(90deg, #fe955a 0%, #f1da63 100%);
+}
+
+.body-content {
+    display: grid;
+    padding-left: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+}

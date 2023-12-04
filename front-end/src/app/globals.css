@@ -6,6 +6,14 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --neutral-3: #89888b;
+  --neutral-1: #17161a;
+  --neutral-2: #3a3841;
+  --neutral-4: #d6d6d6;
+  --neutral-5: #ffffff;
+  --primary: #da458f;
+  --secondary: #fbc625;
+  --white: #f5f8fa;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +26,18 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: url("../assets/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: This will keep the background fixed while scrolling */
+}
+
+.primary-button {
+  border-radius: 4px;
+  background: var(--primary, linear-gradient(91deg, #da458f -6%, #da34dd 113.05%));
+
+  /* Button / Default */
+  box-shadow: 0px 0px 50px 0px rgba(187, 75, 255, 0.32);
+  min-width: 168px;
+  min-height: 48px;
 }
